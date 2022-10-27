@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Bautista Suarez">
+	<main>
+		{/* titulo */}
+		<h1>Bautista Suarez</h1>
+		<p>Autodidacta, 24 años, Fullstack</p>
+
+		{/* conocimientos || habilidades */}
+		<div>
+			<h2>Conocimientos</h2>
+			<ul>
+				<li>Node.js</li>
+				<li>C# .NET</li>
+				<li>Angular</li>
+				<li>Python</li>
+				<li>DB SQL: PostgreSQL, MariaDB, MySQL</li>
+				<li>DB NoSQL: MongoDB, DynamoDB</li>
+			</ul>
+		</div>
+
+		{/* proyectos */}
+		<div>
+			<div>
+				<a href="https://github.com/DevBauti/TS-clean-architecture">
+					<h2>TS-clean-architecture &rarr;</h2>
+				</a>
+				<p>
+					Practica de arquitectura limpia en Typescript con Express y
+					alamacenamiento en DynamoDB(aws)
+				</p>
+			</div>
+			<div>
+				<a href="https://github.com/DevBauti/FsAngular-NET">
+					<h2>Fullstack Angular & .NET &rarr;</h2>
+				</a>
+				<p>Full Stack Angular .NET</p>
+			</div>
+			<div>
+				<a href="https://github.com/DevBauti/ApiAuth">
+					<h2>ApiAuth &rarr;</h2>
+				</a>
+				<p>
+					Api rest de usuarios con autenticacion y validacion,
+					construida en Express, jwt, bcryptjs.
+				</p>
+			</div>
+			<div>
+				<a href="https://github.com/DevBauti/CrudBookCs">
+					<h2>CrudBookCs &rarr;</h2>
+				</a>
+				<p>Crud .Net 6 for learning</p>
+			</div>
+			<div>
+				<a href="https://github.com/DevBauti/notes">
+					<h2>Notes &rarr;</h2>
+				</a>
+				<p>Crud simple en Express</p>
+			</div>
+			<div>
+				<a href="https://github.com/DevBauti/crud_Django">
+					<h2>Crud Django &rarr;</h2>
+				</a>
+				<p>Api Rest construida con Django y PostgreSQL</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<h3>
+			<a
+				href="https://www.linkedin.com/in/devbautisuarez/"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				Linkedin |
+			</a>
+		</h3>
+		<h3>
+			<a
+				href="https://github.com/DevBauti"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				| Github
+			</a>
+		</h3>
+	</footer>
+</Layout>
+
+<style>
+	main {
+		min-height: 100vh;
+		padding: 6rem 4rem;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	a {
+		color: #9c9c9c;
+		text-decoration: none;
+		transition: .1s;
+	}
+	a:hover{
+		color: #d2d2d2;
+	}
+	
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	footer {
+		display: flex;
+		flex: 1;
+		padding: 2rem 0;
+		border-top: 1px solid #111;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
