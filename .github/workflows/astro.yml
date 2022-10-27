@@ -37,12 +37,12 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          if [ -f "$/package-lock.json" ]; then
+          if [ -f "./package-lock.json" ]; then
             echo "::set-output name=manager::npm"
             echo "::set-output name=command::ci"
             echo "::set-output name=runner::npx --no-install"
             exit 0
-          elif [ -f "$/yarn.lock" ]; then
+          elif [ -f "./yarn.lock" ]; then
             echo "::set-output name=manager::yarn"
             echo "::set-output name=command::install"
             echo "::set-output name=runner::yarn"
