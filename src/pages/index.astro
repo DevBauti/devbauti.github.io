@@ -4,111 +4,104 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Bautista Suarez">
 	<main>
-		{/* titulo */}
-		<h1>Bautista Suarez</h1>
-		<p>Backend, Data Analyst de 26 años</p>
+		{/* Encabezado */}
+		<header>
+			<h1>Bautista Suarez</h1>
+			<p>Backend Developer & Data Analyst</p>
+		</header>
 
-		{/* conocimientos || habilidades */}
-		<div>
-			<h2>Skills</h2>
+		{/* Resumen Personal */}
+		<section id="about">
+			<h2>Sobre Mí</h2>
+			<p>
+				Soy un desarrollador backend y analista de datos con 26 años de
+				experiencia en tecnologías como Golang, Python y Typescript. Me
+				apasiona analizar datos y crear soluciones eficientes para
+				problemas complejos.
+			</p>
+		</section>
+
+		{/* Habilidades */}
+		<section id="skills">
+			<h2>Habilidades</h2>
 			<ul>
-
-				<li>Golang | Python | Typescript</li>
-				<li>Pandas | Matplotlib | PowerBi</li>
-				<li>DB: </li>
-				<li>Sql: MySQL, MariaDB</li>
-				<li>NoSQL: MongoDB, DynamoDB</li>
-
-				<li>Idiomas: Ingles Basico | Portugues Basico</li>
-				
+				<li>Lenguajes: Golang | Python | Typescript</li>
+				<li>Herramientas: Pandas | Plotly | PowerBi</li>
+				<li>Bases de Datos:</li>
+				<ul>
+					<li>SQL: MySQL, MariaDB</li>
+					<li>NoSQL: MongoDB, DynamoDB</li>
+				</ul>
+				<li>Idiomas: Inglés Básico | Portugués Básico</li>
 			</ul>
-		</div>
+		</section>
 
-		{/* proyectos */}
-		<div>
-			<div>
+		{/* Proyectos */}
+		<section id="projects">
+			<h2>Proyectos</h2>
+			<div class="project">
+				<a href="https://github.com/DevBauti/petro">
+					<h3>Petro &rarr;</h3>
+				</a>
+				<p>
+					Este análisis explora los datos desde el 2020 de la producción
+					de pozos petroleros en Argentina.
+					Fue realizado en Pandas y Plotly.
+				</p>
+			</div>
+			<div class="project">
+				<a href="https://github.com/DevBauti/reco">
+					<h3>Reco: Sistema de recomendacion &rarr;</h3>
+				</a>
+				<p>
+					Sistema de recomendaciones de productos basado
+					en TF.IDF y Similitud de Coseno. 
+				</p>
+			</div>
+			<div class="project">
 				<a href="https://github.com/DevBauti/CoffeeShop">
-					<h2>Coffe shop Analysis&rarr;</h2>
+					<h3>Coffee Shop Analysis&rarr;</h3>
 				</a>
 				<p>
-					Analicé las ventas, categorías y productos más vendidos. Use Pandas y Matplotlib 
+					Análisis de ventas, categorías y productos más vendidos
+					usando Pandas y Matplotlib.
 				</p>
 			</div>
-			<div>
+			<div class="project">
 				<a href="https://github.com/DevBauti/sleep_healthy_analysis">
-					<h2>Sleep Healthy Analysis &rarr;</h2>
+					<h3>Sleep Healthy Analysis &rarr;</h3>
 				</a>
 				<p>
-					Es un pequeño análisis de la calidad/salud del sueño en un grupo de adultos/adultos mayores. Use principalmente Pandas y Matplotlib
+					Análisis de la calidad del sueño en adultos usando Pandas y
+					Matplotlib.
 				</p>
 			</div>
-			
-			<div>
-				<a href="https://github.com/DevBauti/Books">
-					<h2>Books Analysis &rarr;</h2>
-				</a>
-				<p>
-					Analicé la evolución de los títulos per cápita a través del tiempo en diferentes países.  Use principalmente Pandas y Matplotlib
-				</p>
-			</div>
-			<div>
+			<div class="project">
 				<a href="https://github.com/DevBauti/auto-form">
-					<h2>Auto Form &rarr;</h2>
+					<h3>Auto Form &rarr;</h3>
+				</a>
+				<p>Automatización de formularios usando Pandas y Selenium.</p>
+			</div>
+			<div class="project">
+				<a href="https://github.com/DevBauti/crudEcho">
+					<h3>Crud Simple Echo/Go &rarr;</h3>
 				</a>
 				<p>
-					Necesitaba cargar de manera automática unos formularios. En este repositorio se encuentra un ejemplo de lo que hice. Use Pandas y Selenium.
+					CRUD simple con Go y el framework Echo, conectando a
+					MongoDB.
 				</p>
 			</div>
-			<div>
-				<a href="https://github.com/DevBauti/crudEcho">
-					<h2>Crud Simple Echo/Go &rarr;</h2>
-				</a>
-				<p>Este es un crud simple realizado en Go con el framework web Echo, con conexion a la base de datos noSQL mongoDB</p>
-			</div>
-		</div>
+		</section>
 	</main>
+
+	{/* Pie de página */}
 	<footer>
-		<h3>
-			<a
+		<h3>Contacto</h3>
+		<p>
+			Puedes encontrarme en <a
 				href="https://github.com/DevBauti"
 				target="_blank"
-				rel="noopener noreferrer"
-			>
-				Github
-			</a>
-		</h3>
+				rel="noopener noreferrer">Github</a>
+		</p>
 	</footer>
 </Layout>
-
-<style>
-	main {
-		padding: 6rem 4rem 2rem 4rem;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
-	a {
-		color: #9c9c9c;
-		text-decoration: none;
-		transition: .1s;
-	}
-	a:hover{
-		color: #d2d2d2;
-	}
-	
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	footer {
-		display: flex;
-		flex: 1;
-		padding: 2rem 0;
-		border-top: 1px solid #111;
-		justify-content: center;
-		align-items: center;
-	}
-</style>
