@@ -18,12 +18,38 @@ const { title } = Astro.props;
 	<body>
 		<slot />
 		<style is:global>
-			html, body{
-				font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-					Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-					Helvetica Neue, sans-serif;
-				background-color: #222; 
-				color: #9c9c9c;
+			html,
+			body {
+				font-family: "Roboto", sans-serif;
+				background-color: #1c1c1c;
+				color: #e0e0e0;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				padding: 20px;
+			}
+			main {
+				background-color: #333;
+				padding: 40px;
+				border-radius: 10px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			}
+			a {
+				color: #c0bebe;
+				text-decoration: none;
+			}
+
+			a:visited {
+				color: #c0bebe;
+			}
+
+			a:hover {
+				text-decoration: underline;
 			}
 		</style>
 	</body>
